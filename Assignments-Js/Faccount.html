@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var records = [];
+        var users = new Object();
+        alert("Welcome To Bank Details");
+        while(true){
+        var options = prompt(`Choose Your Option
+                              1.Registration
+                              2.CheckBalance
+                              3.Widraw Amount
+                              4.deposite
+                              5.fixed deposit
+                              6.exit`)
+                           if(options == '1' || options == '2' || options == '3'
+                            || options == '4' || options == '5' || options == 6){
+ 
+                             switch(options) {
+                                 
+                                case "1":
+                                Registration();
+                                 break;
+                             }
+                            }
+                            else{
+                                break;
+                            }
+                            //  switch(options) {
+                            //     case "2":
+                            //  }
+                            //  switch(options) {
+                            //     case "3":
+                            //  }
+                            //  switch(options) {
+                            //     case "4":
+                            //  }
+                            //  switch(options) {
+                            //     case "5":
+                            //  }
+                            //  switch(options) {
+                            //     case "6":
+                            //  }
+                             function Registration(){
+                            var Accountname = prompt("Enter Your Name Of The Account");
+                            var AccountEmail= prompt("Enter Your Email");
+                            var phoneNumber = prompt("Enter Your Phone Number");
+                            var AccountNo = prompt("Enter Your AccountNo"); 
+                            var AccounOpening = prompt("Enter Opening Balance");
+                            users = {};
+                            users.name=Accountname;
+                            users.number=phoneNumber;
+                            users.Email=AccountEmail;
+                            users.accountNo=AccountNo;
+                            users.Opening=AccounOpening;
+                            records.push(users);
+                            alert("Account Opened Successfully");
+                            console.log(records);
+                    
+                               }
+                        
+}
+        </script>
+</body>
+</html>

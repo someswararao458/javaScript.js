@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var seasons = new Array ();
+
+        alert("Enter your season")
+        while(true){ 
+        var options = prompt(`select your season
+                              1.Winter Season
+                              2.Summer Season
+                              3.Raineee Season`);
+                              
+                              switch(options){
+                             
+                             case '1':
+                          alert("Wellcome to Winter season");
+                          var month1 = prompt("Enter 1st month");
+                          var month2 = prompt("Enter 2nd month");
+                          var month3 = prompt("Enter 11th month");
+                          var month4 = prompt("Enter 12th month");
+                          var season1 = new Object();
+                          season1.month1=month1;
+                          season1.month2=month2
+                          season1.month3=month3
+                          season1.month4=month4
+                          seasons.push(season1);
+                          console.log(seasons);
+                        console.log("These All Are Winter Season:",season1);
+                              break;
+                            
+                            
+                              switch(options){
+                             case '2':
+                            alert("Wellcome to Summer season");
+                          var month5 = prompt("Enter 3rd month");
+                          var month6 = prompt("Enter 4th month");
+                          var month7 = prompt("Enter 5th month");
+                          var month8 = prompt("Enter 6th month"); 
+                        var season2 = new Object();
+                        season2.month5=month5
+                        season2.month6=month6
+                        season2.month7=month7
+                        season2.month8=month8
+                        console.log(seasons)
+                        console.log("These Are All Summer Season:",season2);        
+                        break;
+                                                        
+                                       switch(options){
+                              
+                               case '3':
+                         alert("Wellcome to Rainee season");
+                          var month9 = prompt("Enter 7th month");
+                          var month10 = prompt("Enter 8th month");
+                          var month11 = prompt("Enter 9th month");
+                          var month12 = prompt("Enter 10th month");
+                        var season3 = new Object();
+                        season3.month=month1
+                        season3.month9=month9
+                        season3.month10=month10
+                        season3.month11=month11
+                        console.log(seasons);
+                        console.log("These Are All Rainee season:",season3)
+                       break;
+                        }
+                    }
+                }
+            }
+</script>
+</body>
+</html>
+ 
